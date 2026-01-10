@@ -48,7 +48,7 @@ export const orders: Order[] = [
   { id: 'o3', date: '2024-07-15', status: 'Delivered', total: 11.00, items: [{ menuItemId: 'm5', quantity: 1 }] },
 ];
 
-export const favoriteItemIds: string[] = ['m1', 'm5', 'm6'];
+export const favoriteItemIds: string[] = ['m1', 'm5', 'm3'];
 
 export const walletTransactions: WalletTransaction[] = [
     { id: 't1', date: '2024-07-20', description: 'Added funds', amount: 50.00, type: 'credit' },
