@@ -19,16 +19,21 @@ export const foodStalls: FoodStall[] = [
   { id: '6', name: 'Salad Station', cuisine: 'Healthy', rating: 4.7, ...findImage('salad-station-stall') },
 ];
 
-export const menuItems: MenuItem[] = [
-  { id: 'm1', stallId: '1', name: 'Spaghetti Carbonara', description: 'Classic creamy pasta with pancetta.', price: 12.99, ...findImage('spaghetti-carbonara') },
-  { id: 'm2', stallId: '1', name: 'Margherita Pizza', description: 'Fresh tomatoes, mozzarella, and basil.', price: 10.50, ...findImage('margherita-pizza') },
-  { id: 'm3', stallId: '2', name: 'Classic Cheeseburger', description: 'Juicy beef patty with cheddar cheese.', price: 9.99, ...findImage('classic-cheeseburger') },
-  { id: 'm4', stallId: '2', name: 'Veggie Wrap', description: 'Grilled vegetables in a soft tortilla.', price: 8.50, ...findImage('veggie-wrap') },
-  { id: 'm5', stallId: '3', name: 'Chicken Tacos', description: 'Three tacos with grilled chicken and salsa.', price: 11.00, ...findImage('chicken-tacos') },
-  { id: 'm6', stallId: '4', name: 'California Roll', description: '8 pieces of crab, avocado, and cucumber sushi.', price: 14.00, ...findImage('california-roll') },
-  { id: 'm7', stallId: '5', name: 'Chocolate Lava Cake', description: 'Warm chocolate cake with a molten center.', price: 6.99, ...findImage('chocolate-lava-cake') },
-  { id: 'm8', stallId: '6', name: 'Fresh Orange Juice', description: 'Freshly squeezed juice.', price: 4.50, ...findImage('fresh-orange-juice') },
-];
+export const menuItemsData: Omit<MenuItem, 'imageUrl' | 'imageHint'>[] = [
+    { id: 'm1', stallId: '1', name: 'Spaghetti Carbonara', description: 'Classic creamy pasta with pancetta.', price: 12.99 },
+    { id: 'm2', stallId: '1', name: 'Margherita Pizza', description: 'Fresh tomatoes, mozzarella, and basil.', price: 10.50 },
+    { id: 'm3', stallId: '2', name: 'Classic Cheeseburger', description: 'Juicy beef patty with cheddar cheese.', price: 9.99 },
+    { id: 'm4', stallId: '2', name: 'Veggie Wrap', description: 'Grilled vegetables in a soft tortilla.', price: 8.50 },
+    { id: 'm5', stallId: '3', name: 'Chicken Tacos', description: 'Three tacos with grilled chicken and salsa.', price: 11.00 },
+    { id: 'm6', stallId: '4', name: 'California Roll', description: '8 pieces of crab, avocado, and cucumber sushi.', price: 14.00 },
+    { id: 'm7', stallId: '5', name: 'Chocolate Lava Cake', description: 'Warm chocolate cake with a molten center.', price: 6.99 },
+    { id: 'm8', stallId: '6', name: 'Fresh Orange Juice', description: 'Freshly squeezed juice.', price: 4.50 },
+  ];
+
+export const menuItems: MenuItem[] = menuItemsData.map(item => ({
+    ...item,
+    ...findImage(item.id)
+}));
 
 export const user: User = {
   name: 'Alex Doe',
@@ -54,7 +59,7 @@ export const walletTransactions: WalletTransaction[] = [
 // API-like functions
 export const getFoodStalls = () => foodStalls;
 export const getFoodStallById = (id: string) => foodStalls.find(stall => stall.id === id);
-export const getMenuForStall = (stallId: string) => menuItems.filter(item => item.id.startsWith('m') && item.stallId === stallId);
+export const getMenuForStall = (stallId: string) => menuItems.filter(item => item.stallId === stallId);
 export const getMenuItemById = (id: string) => menuItems.find(item => item.id === id);
 export const getUser = () => user;
 export const getOrders = () => orders;

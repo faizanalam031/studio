@@ -4,14 +4,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Separator } from '@/components/ui/separator';
 import { getMenuItemById } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Minus, Plus, ShoppingCart, Trash2 } from 'lucide-react';
-
-const findImage = (id: string) => {
-  const image = PlaceHolderImages.find((img) => img.id === id);
-  return image || { imageUrl: '', imageHint: 'placeholder' };
-}
 
 // Mock cart data
 const cartItems = [
@@ -38,12 +32,11 @@ export default function CartPage() {
             {cartItems.map(cartItem => {
                 const item = getMenuItemById(cartItem.menuItemId);
                 if (!item) return null;
-                const { imageUrl, imageHint } = findImage(item.id);
 
                 return (
                     <Card key={item.id}>
                         <CardContent className="flex items-center gap-4 p-4">
-                            <Image src={imageUrl} alt={item.name} data-ai-hint={imageHint} width={80} height={80} className="rounded-md object-cover" />
+                            <Image src={item.imageUrl} alt={item.name} data-ai-hint={item.imageHint} width={80} height={80} className="rounded-md object-cover" />
                             <div className="flex-grow">
                                 <p className="font-semibold">{item.name}</p>
                                 <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
