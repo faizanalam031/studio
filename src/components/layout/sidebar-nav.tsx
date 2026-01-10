@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/sidebar';
 import { Logo } from '@/components/icons';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useAuth } from '@/lib/auth-context';
 import { getUser } from '@/lib/data';
 import {
   Home,
@@ -22,26 +23,35 @@ import {
   Star,
   LogOut,
   Wallet,
+  BarChart3,
+  Package,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const user = getUser();
 
-const menuItems = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '/orders', label: 'My Orders', icon: ShoppingBag },
-  { href: '/favorites', label: 'Favorites', icon: Heart },
-  { href: '/account', label: 'Account', icon: Wallet },
-  { href: '/profile', label: 'Profile', icon: User },
-  { href: '/help', label: 'Help', icon: MessageCircleQuestion },
-  { href: '/settings', label: 'Settings', icon: Settings },
-  { href: '/feedback', label: 'Feedback', icon: Star },
-];
-
 export function SidebarNav() {
   const pathname = usePathname();
   const { state } = useSidebar();
+  const { role } = useAuth();
+
+  const menuItems = role === 'staff' ? [
+    { href: '/staff-dashboard', label: 'Dashboard', icon: Home },
+    { href: '/orders', label: 'Order Management', icon: ShoppingBag },
+    { href: '/analytics', label: 'Analytics', icon: BarChart3 },
+    { href: '/inventory', label: 'Inventory', icon: Package },
+    { href: '/settings', label: 'Store Settings', icon: Settings },
+  ] : [
+    { href: '/', label: 'Home', icon: Home },
+    { href: '/orders', label: 'My Orders', icon: ShoppingBag },
+    { href: '/favorites', label: 'Favorites', icon: Heart },
+    { href: '/account', label: 'Account', icon: Wallet },
+    { href: '/profile', label: 'Profile', icon: User },
+    { href: '/help', label: 'Help', icon: MessageCircleQuestion },
+    { href: '/settings', label: 'Settings', icon: Settings },
+    { href: '/feedback', label: 'Feedback', icon: Star },
+  ];
 
   return (
     <>
@@ -76,14 +86,7 @@ export function SidebarNav() {
         </SidebarMenu>
       </SidebarContent>
       <SidebarFooter className="flex-col !items-stretch gap-2">
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton>
-              <LogOut />
-              <span>Logout</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
+        
         <div className="flex items-center gap-3 p-2 rounded-lg bg-background">
           <Avatar className="h-10 w-10">
             <AvatarImage src={user.avatarUrl} alt={user.name} />
