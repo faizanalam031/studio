@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "pasta-paradise-stall",
+      "description": "A vibrant and busy pasta stall.",
+      "imageUrl": "https://images.unsplash.com/photo-1653551532342-1cae4bbb2296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXN0YSUyMHJlc3RhdXJhbnR8ZW58MHx8fHwxNzY4MDQwNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pasta restaurant"
+    },
+    {
+      "id": "burger-barn-stall",
+      "description": "A rustic and welcoming burger joint.",
+      "imageUrl": "https://images.unsplash.com/photo-1644447295447-31af467e866a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXJnZXIlMjByZXN0YXVyYW50fGVufDB8fHx8MTc2ODAzOTQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "burger restaurant"
+    },
+    {
+      "id": "taco-town-stall",
+      "description": "A colorful and lively taco stand.",
+      "imageUrl": "https://images.unsplash.com/photo-1700625916627-16ad4fb0553c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0YWNvJTIwcmVzdGF1cmFudHxlbnwwfHx8fDE3NjgwNDA2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "taco restaurant"
+    },
+    {
+      "id": "sushi-spot-stall",
+      "description": "A modern and elegant sushi bar.",
+      "imageUrl": "https://images.unsplash.com/photo-1639650538773-ffe1d8ad9d3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdXNoaSUyMGJhcnxlbnwwfHx8fDE3Njc5ODg5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sushi bar"
+    },
+    {
+      "id": "pizza-palace-stall",
+      "description": "A classic pizzeria with a brick oven.",
+      "imageUrl": "https://images.unsplash.com/photo-1675624965647-eabd4a1e2cd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwaXp6YSUyMHBsYWNlfGVufDB8fHx8MTc2ODAzNzc1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pizza place"
+    },
+    {
+      "id": "salad-station-stall",
+      "description": "A fresh and green salad bar.",
+      "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzYWxhZCUyMGJhcnxlbnwwfHx8fDE3Njc5NjM1NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salad bar"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "description": "A creamy spaghetti carbonara in a white bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1719250726371-b4076d48ce6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzcGFnaGV0dGklMjBjYXJib25hcmF8ZW58MHx8fHwxNzY4MDAzMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spaghetti carbonara"
+    },
+    {
+      "id": "classic-cheeseburger",
+      "description": "A juicy classic cheeseburger with fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1665145323730-2d1e5f77426c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGVlc2VidXJnZXIlMjBmcmllc3xlbnwwfHx8fDE3NjgwMDMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheeseburger fries"
+    },
+    {
+      "id": "chicken-tacos",
+      "description": "Three spicy chicken tacos with lime.",
+      "imageUrl": "https://images.unsplash.com/photo-1626160199683-6f9993bee037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGlja2VuJTIwdGFjb3N8ZW58MHx8fHwxNzY4MDQwNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tacos"
+    },
+    {
+      "id": "california-roll",
+      "description": "A plate of fresh California rolls with wasabi and ginger.",
+      "imageUrl": "https://images.unsplash.com/photo-1588343509706-275561fc8ee0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWxpZm9ybmlhJTIwcm9sbHxlbnwwfHx8fDE3NjgwMDk0Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "california roll"
+    },
+    {
+      "id": "margherita-pizza",
+      "description": "A classic margherita pizza with fresh basil.",
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY4MDI5OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "margherita pizza"
+    },
+    {
+      "id": "veggie-wrap",
+      "description": "A healthy veggie wrap filled with fresh vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1761315414057-21d6bd6ca801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2ZWdnaWUlMjB3cmFwfGVufDB8fHx8MTc2Nzk3MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "veggie wrap"
+    },
+    {
+      "id": "chocolate-lava-cake",
+      "description": "A rich chocolate lava cake with a molten center.",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2ODAwMzI0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "fresh-orange-juice",
+      "description": "A glass of freshly squeezed orange juice.",
+      "imageUrl": "https://images.unsplash.com/photo-1577680716097-9a565ddc2007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmFuZ2UlMjBqdWljZXxlbnwwfHx8fDE3NjgwMDg0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "orange juice"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Avatar for the current user",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjgwMDU1OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "cart-item-1",
+      "description": "Spaghetti Carbonara in cart",
+      "imageUrl": "https://images.unsplash.com/photo-1719250726371-b4076d48ce6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzcGFnaGV0dGklMjBjYXJib25hcmF8ZW58MHx8fHwxNzY4MDAzMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spaghetti carbonara"
+    },
+    {
+      "id": "cart-item-2",
+      "description": "Classic cheeseburger in cart",
+      "imageUrl": "https://images.unsplash.com/photo-1598182198871-d3f4ab4fd181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGVlc2VidXJnZXJ8ZW58MHx8fHwxNzY3OTgxNzEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheeseburger"
+    }
+  ]
 }
