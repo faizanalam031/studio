@@ -1,14 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
-import { generateLovablePrompt } from '@/ai/flows/generate-lovable-prompt';
 import { getFoodStalls } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 
-export default async function Home() {
+export default function Home() {
   const foodStalls = getFoodStalls();
-  const { prompt } = await generateLovablePrompt({ appName: 'QuickBite Delight' });
+  const prompt = "Discover and order your favorite meals, delivered right to your door.";
 
   return (
     <div className="flex flex-col gap-8">
