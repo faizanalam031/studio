@@ -33,7 +33,7 @@ export default function OrdersPage() {
                             <p className="text-sm text-muted-foreground">{order.date}</p>
                         </div>
                         <div className="flex items-center gap-4">
-                            <p className="font-semibold text-lg">${order.total.toFixed(2)}</p>
+                            <p className="font-semibold text-lg">₹{order.total.toFixed(2)}</p>
                             <Badge
                             variant={order.status === 'Delivered' ? 'default' : 'secondary'}
                             className={cn(order.status === 'Delivered' && 'bg-green-600 text-white', order.status === 'Processing' && 'bg-amber-500 text-white')}
@@ -52,7 +52,7 @@ export default function OrdersPage() {
                                         <p className="font-semibold">{item.name}</p>
                                         <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
                                     </div>
-                                    <p className="font-medium">${(item.price * item.quantity).toFixed(2)}</p>
+                                    <p className="font-medium">₹{(item.price * item.quantity).toFixed(2)}</p>
                                 </div>
                             ))}
                         </div>

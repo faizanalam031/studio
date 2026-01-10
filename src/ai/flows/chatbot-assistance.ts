@@ -29,11 +29,11 @@ const chatbotAssistancePrompt = ai.definePrompt({
   name: 'chatbotAssistancePrompt',
   input: {schema: ChatbotAssistanceInputSchema},
   output: {schema: ChatbotAssistanceOutputSchema},
-  prompt: `You are a helpful chatbot assistant for the QuickBite Delight app.
+  prompt: `You are a helpful chatbot assistant for the QuickByte Delight app.
   Your goal is to answer user questions about the app and its features.
   Use the following context to provide helpful and informative answers.
 
-  App Description: QuickBite Delight is a food ordering app that allows users to browse food stalls,
+  App Description: QuickByte Delight is a food ordering app that allows users to browse food stalls,
   view menu items with images and prices, add items to a cart, place orders with various payment methods,
   track order status, manage favorite food items, and access a digital wallet.
 

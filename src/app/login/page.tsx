@@ -57,7 +57,7 @@ export default function LoginPage() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <div>
-              <CardTitle>Login to QuickBite Delight</CardTitle>
+              <CardTitle>Login to QuickByte Delight</CardTitle>
               <CardDescription>
                 Enter your credentials to access the application
               </CardDescription>

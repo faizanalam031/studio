@@ -18,7 +18,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
     }
   }, [isLoggedIn, pathname, router]);
 
-  if (pathname === '/login' || pathname === '/staff-dashboard') {
+  if (pathname === '/login' || pathname === '/staff-dashboard' || pathname.startsWith('/staff/')) {
     return <>{children}</>;
   }
 

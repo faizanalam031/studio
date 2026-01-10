@@ -43,7 +43,7 @@ export function FeedbackForm() {
   }
   
   const handleShare = () => {
-    const text = form.getValues('review') || "I'm loving the QuickBite Delight app!";
+    const text = form.getValues('review') || "I'm loving the QuickByte Delight app!";
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
   }

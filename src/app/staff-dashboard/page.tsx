@@ -13,7 +13,7 @@ import {
   DollarSign,
   Package,
   AlertCircle,
-  BarChart3,
+
   Settings
 } from 'lucide-react';
 
@@ -41,7 +41,7 @@ export default function StaffDashboard() {
     },
     {
       title: 'Revenue',
-      value: '$12,345',
+      value: '₹12,345',
       change: '+8%',
       icon: DollarSign,
       color: 'text-green-600'
@@ -69,7 +69,7 @@ export default function StaffDashboard() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-gray-900">Staff Dashboard</h1>
-            <p className="text-gray-600 mt-1">Manage your QuickBite operations</p>
+            <p className="text-gray-600 mt-1">Manage your QuickByte operations</p>
           </div>
           <Badge variant="secondary" className="px-3 py-1">
             Staff Portal
@@ -101,29 +101,29 @@ export default function StaffDashboard() {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <BarChart3 className="h-5 w-5" />
-                Analytics
-              </CardTitle>
-              <CardDescription>
-                View detailed reports and analytics
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button className="w-full">View Reports</Button>
-            </CardContent>
-          </Card>
-
-          <Card>
+          <Card className="cursor-pointer hover:shadow-lg transition-shadow" onClick={() => router.push('/staff/menu')}>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Package className="h-5 w-5" />
+                Menu Management
+              </CardTitle>
+              <CardDescription>
+                Add, edit, and manage food items in the menu
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button className="w-full">Manage Menu</Button>
+            </CardContent>
+          </Card>
+
+          <Card className="cursor-pointer hover:shadow-lg transition-shadow" onClick={() => router.push('/staff/orders')}>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <ShoppingBag className="h-5 w-5" />
                 Order Management
               </CardTitle>
               <CardDescription>
-                Manage incoming orders and deliveries
+                View and manage incoming orders and deliveries
               </CardDescription>
             </CardHeader>
             <CardContent>

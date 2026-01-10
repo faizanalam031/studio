@@ -38,9 +38,8 @@ export function SidebarNav() {
 
   const menuItems = role === 'staff' ? [
     { href: '/staff-dashboard', label: 'Dashboard', icon: Home },
-    { href: '/orders', label: 'Order Management', icon: ShoppingBag },
-    { href: '/analytics', label: 'Analytics', icon: BarChart3 },
-    { href: '/inventory', label: 'Inventory', icon: Package },
+    { href: '/staff/orders', label: 'Order Management', icon: ShoppingBag },
+    { href: '/staff/menu', label: 'Menu Management', icon: Package },
     { href: '/settings', label: 'Store Settings', icon: Settings },
   ] : [
     { href: '/', label: 'Home', icon: Home },
@@ -63,7 +62,7 @@ export function SidebarNav() {
               state === 'collapsed' ? 'opacity-0' : 'opacity-100'
             }`}
           >
-            QuickBite
+            QuickByte
           </span>
         </div>
       </SidebarHeader>

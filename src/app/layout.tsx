@@ -5,7 +5,7 @@ import { AuthProvider } from '@/lib/auth-context';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'QuickBite Delight',
+  title: 'QuickByte Delight',
   description: 'Your favorite food, delivered fast.',
 };
 

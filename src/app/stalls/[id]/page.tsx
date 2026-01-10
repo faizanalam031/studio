@@ -52,7 +52,7 @@ export default function StallPage({ params }: { params: { id: string } }) {
                 <CardDescription className="mt-1 text-sm">{item.description}</CardDescription>
               </CardContent>
               <CardFooter className="flex justify-between items-center p-4 pt-0">
-                <p className="text-lg font-semibold text-primary">${item.price.toFixed(2)}</p>
+                <p className="text-lg font-semibold text-primary">₹{item.price.toFixed(2)}</p>
                 <Button size="sm">
                   <Plus className="mr-2 h-4 w-4" /> Add to Cart
                 </Button>

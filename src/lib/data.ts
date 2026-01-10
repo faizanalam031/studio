@@ -11,13 +11,11 @@ const findImage = (id: string) => {
 };
 
 export const foodStalls: FoodStall[] = [
-  { id: '1', name: 'Pasta Paradise', cuisine: 'Italian', rating: 4.5, ...findImage('pasta-paradise-stall') },
-  { id: '2', name: 'Burger Barn', cuisine: 'American', rating: 4.2, ...findImage('burger-barn-stall') },
-  { id: '3', name: 'Taco Town', cuisine: 'Mexican', rating: 4.8, ...findImage('taco-town-stall') },
-  { id: '4', name: 'Sushi Spot', cuisine: 'Japanese', rating: 4.9, ...findImage('sushi-spot-stall') },
-  { id: '5', name: 'Pizza Palace', cuisine: 'Italian', rating: 4.4, ...findImage('pizza-palace-stall') },
-  { id: '6', name: 'Salad Station', cuisine: 'Healthy', rating: 4.7, ...findImage('salad-station-stall') },
-];
+  { id: '1', name: 'DC Soda', cuisine: 'Galgotias University', rating: 4.5, ...findImage('pasta-paradise-stall') },
+  { id: '2', name: 'Monginis', cuisine: 'Galgotias University', rating: 4.2, ...findImage('burger-barn-stall') },
+  { id: '3', name: 'Lee Broc', cuisine: 'Galgotias University', rating: 4.8, ...findImage('taco-town-stall') },
+  { id: '4', name: 'Fusion', cuisine: 'Galgotias University', rating: 4.9, ...findImage('sushi-spot-stall') },
+  ];
 
 export const menuItemsData: Omit<MenuItem, 'imageUrl' | 'imageHint'>[] = [
     { id: 'm1', stallId: '1', name: 'Spaghetti Carbonara', description: 'Classic creamy pasta with pancetta.', price: 12.99 },
