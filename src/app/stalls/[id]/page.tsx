@@ -1,3 +1,5 @@
+'use client';
+
 import { getFoodStallById, getMenuForStall } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -5,13 +7,33 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { useCart } from '@/lib/cart-context';
+import { useState, useEffect } from 'react';
 
-export default function StallPage({ params }: { params: { id: string } }) {
-  const stall = getFoodStallById(params.id);
-  const menu = getMenuForStall(params.id);
+export default function StallPage({ params }: { params: Promise<{ id: string }> }) {
+  const [stall, setStall] = useState<any>(null);
+  const [menu, setMenu] = useState<any[]>([]);
+  const { addToCart } = useCart();
+
+  useEffect(() => {
+    const loadData = async () => {
+      const { id } = await params;
+      const stallData = getFoodStallById(id);
+      const menuData = getMenuForStall(id);
+
+      if (!stallData) {
+        notFound();
+      }
+
+      setStall(stallData);
+      setMenu(menuData);
+    };
+
+    loadData();
+  }, [params]);
 
   if (!stall) {
-    notFound();
+    return <div>Loading...</div>;
   }
 
   return (
@@ -53,7 +75,7 @@ export default function StallPage({ params }: { params: { id: string } }) {
               </CardContent>
               <CardFooter className="flex justify-between items-center p-4 pt-0">
                 <p className="text-lg font-semibold text-primary">₹{item.price.toFixed(2)}</p>
-                <Button size="sm">
+                <Button size="sm" onClick={() => addToCart(item)}>
                   <Plus className="mr-2 h-4 w-4" /> Add to Cart
                 </Button>
               </CardFooter>

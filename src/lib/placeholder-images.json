@@ -9,7 +9,7 @@
     {
       "id": "burger-barn-stall",
       "description": "A rustic and welcoming burger joint.",
-      "imageUrl": "https://theovenchef.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-11-01-at-5.39.28-PM-1-scaled-e1698841246352.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop&crop=center",
       "imageHint": "burger restaurant"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": "sushi-spot-stall",
       "description": "A modern and elegant sushi bar.",
-      "imageUrl": "https://images1.livehindustan.com/uploadimage/library/2023/07/06/16_9/free_2/hot_momos_to_samosa_jalebi_these_snacks_will_increase_the_taste_of_monsoon_rain_1688630874.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&h=400&fit=crop&crop=center",
       "imageHint": "sushi bar"
     },
     {
@@ -38,49 +38,49 @@
     },
     {
       "id": "m1",
-      "description": "A creamy spaghetti carbonara in a white bowl.",
-      "imageUrl": "https://www.shutterstock.com/shutterstock/photos/2642734713/display_1500/stock-photo-full-size-coca-cola-plastic-bottle-litter-a-bit-tiled-on-a-red-background-2642734713.jpg",
-      "imageHint": "Coco Cola"
-    },
-    {
-      "id": "m3",
-      "description": "A juicy classic cheeseburger with fries.",
-      "imageUrl": "https://www.hotbreads.co.in/cdn/shop/files/White_Forest_Cake_Hot_Breads.jpg?v=1734340201",
-      "imageHint": "White Forest" 
-    },
-    {
-      "id": "m5",
-      "description": "Three spicy chicken tacos with lime.",
-      "imageUrl": "https://www.jamoona.com/cdn/shop/files/Kurkure-75g-gruenes-Chutney-Style-9038172_1.png?v=1753232102&width=750",
-      "imageHint": "Kurkure"
-    },
-    {
-      "id": "m6",
-      "description": "A plate of fresh California rolls with wasabi and ginger.",
-      "imageUrl": "https://www.thecuriouschickpea.com/wp-content/uploads/2018/12/Tibetan-Veggie-Momos-1.jpg.webp",
-      "imageHint": "Momos"
+      "description": "A refreshing Coca Cola drink.",
+      "imageUrl": "https://images.unsplash.com/photo-1554866585-cd94860890b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2NhJTIwY29sYXxlbnwwfHx8fDE3NjgwMDMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coca cola drink"
     },
     {
       "id": "m2",
-      "description": "A classic margherita pizza with fresh basil.",
-      "imageUrl": "https://cdn.uengage.io/uploads/5/image-295617-1700216048.jpeg",
-      "imageHint": "Sprite"
+      "description": "A refreshing Sprite drink.",
+      "imageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcHJpdGUlMjBkcmlua3xlbnwwfHx8fDE3NjgwMDMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sprite drink"
+    },
+    {
+      "id": "m3",
+      "description": "A delicious White Forest cake.",
+      "imageUrl": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMGZvcmVzdCUyMGNha2V8ZW58MHx8fHwxNzY4MDAzMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white forest cake"
     },
     {
       "id": "m4",
-      "description": "A healthy veggie wrap filled with fresh vegetables.",
-      "imageUrl": "https://en.wikipedia.org/wiki/Black_Forest_gateau#/media/File:Black_Forest_gateau.jpg",
-      "imageHint": "Dark Forest"
+      "description": "A rich Black Forest cake.",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWNrJTIwZm9yZXN0JTIwY2FrZXxlbnwwfHx8fDE3NjgwMDMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black forest cake"
+    },
+    {
+      "id": "m5",
+      "description": "Crispy Kurkure snacks.",
+      "imageUrl": "https://images.unsplash.com/photo-1621351183012-e2f9972dd9bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrdXJrdXJlJTIwc25hY2tzfGVufDB8fHx8MTc2ODAwMzIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kurkure snacks"
+    },
+    {
+      "id": "m6",
+      "description": "Steamy hot momos dumplings.",
+      "imageUrl": "https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb21vc3xlbnwwfHx8fDE3NjgwMDMyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "momos dumplings"
     },
     {
       "id": "m7",
-      "description": "A rich chocolate lava cake with a molten center.",
+      "description": "A rich chocolate lava cake with molten center.",
       "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2ODAwMzI0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chocolate cake"
+      "imageHint": "chocolate lava cake"
     },
     {
       "id": "m8",
-      "description": "A glass of freshly squeezed orange juice.",
+      "description": "Freshly squeezed orange juice.",
       "imageUrl": "https://images.unsplash.com/photo-1577680716097-9a565ddc2007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmFuZ2UlMjBqdWljZXxlbnwwfHx8fDE3NjgwMDg0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "orange juice"
     },

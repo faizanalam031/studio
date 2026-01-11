@@ -272,7 +272,7 @@ export default function MenuManagementPage() {
                     <span className="font-medium">{item.category}</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-600">Price:</span>
+                    <span className="text-gray-600">₹:</span>
                     <span className="font-medium text-green-600">₹{item.price}</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">

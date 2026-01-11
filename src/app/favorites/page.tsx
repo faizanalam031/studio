@@ -1,11 +1,15 @@
+'use client';
+
 import { getFavoriteItems } from '@/lib/data';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { Heart, Plus } from 'lucide-react';
+import { useCart } from '@/lib/cart-context';
 
 export default function FavoritesPage() {
   const favoriteItems = getFavoriteItems();
+  const { addToCart } = useCart();
 
   return (
     <div className="flex flex-col gap-8">
@@ -33,7 +37,7 @@ export default function FavoritesPage() {
               </CardContent>
               <CardFooter className="flex justify-between items-center p-4 pt-0">
                 <p className="text-lg font-semibold text-primary">₹{item.price.toFixed(2)}</p>
-                <Button size="sm">
+                <Button size="sm" onClick={() => addToCart(item)}>
                   <Plus className="mr-2 h-4 w-4" /> Add to Cart
                 </Button>
               </CardFooter>
