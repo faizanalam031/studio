@@ -18,12 +18,12 @@ export const foodStalls: FoodStall[] = [
   ];
 
 export const menuItemsData: Omit<MenuItem, 'imageUrl' | 'imageHint'>[] = [
-    { id: 'm1', stallId: '1', name: 'Spaghetti Carbonara', description: 'Classic creamy pasta with pancetta.', price: 12.99 },
-    { id: 'm2', stallId: '1', name: 'Margherita Pizza', description: 'Fresh tomatoes, mozzarella, and basil.', price: 10.50 },
-    { id: 'm3', stallId: '2', name: 'Classic Cheeseburger', description: 'Juicy beef patty with cheddar cheese.', price: 9.99 },
-    { id: 'm4', stallId: '2', name: 'Veggie Wrap', description: 'Grilled vegetables in a soft tortilla.', price: 8.50 },
-    { id: 'm5', stallId: '3', name: 'Chicken Tacos', description: 'Three tacos with grilled chicken and salsa.', price: 11.00 },
-    { id: 'm6', stallId: '4', name: 'California Roll', description: '8 pieces of crab, avocado, and cucumber sushi.', price: 14.00 },
+    { id: 'm1', stallId: '1', name: 'Coco Cola', description: 'Classic creamy pasta with pancetta.', price: 12.99 },
+    { id: 'm2', stallId: '1', name: 'Sprite', description: 'Fresh tomatoes, mozzarella, and basil.', price: 10.50 },
+    { id: 'm3', stallId: '2', name: 'White Forest', description: 'Juicy beef patty with cheddar cheese.', price: 9.99 },
+    { id: 'm4', stallId: '2', name: 'Black Forest', description: 'Grilled vegetables in a soft tortilla.', price: 8.50 },
+    { id: 'm5', stallId: '3', name: 'Kurkure', description: 'Three tacos with grilled chicken and salsa.', price: 11.00 },
+    { id: 'm6', stallId: '4', name: 'Momos', description: '8 pieces of crab, avocado, and cucumber sushi.', price: 14.00 },
     { id: 'm7', stallId: '5', name: 'Chocolate Lava Cake', description: 'Warm chocolate cake with a molten center.', price: 6.99 },
     { id: 'm8', stallId: '6', name: 'Fresh Orange Juice', description: 'Freshly squeezed juice.', price: 4.50 },
   ];
